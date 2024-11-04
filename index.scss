@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Lora", serif;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.show__more-btn {
+    display: block;
+    margin: 50px auto 30px auto;
+}
+
+@import "./scss/header";
+@import "./scss/product";
+@import "./scss/search";
+@import "./scss/accordion";
+@import "./scss/slider";
+@import "./scss/bascetShow";
+@import "./scss/sign-in";
+@import "./scss/signup";
+@import "./scss/keyframes";
+@import "./scss/alertText";
+
+// background: linear-gradient(360deg, rgb(59, 130, 246), rgb(217, 70, 239), rgb(17, 24, 39));
