@@ -19,7 +19,7 @@ export function alertText(text, href) {
             (target.classList.contains("modal__btn") && target !== target.classList.contains("modal__content"))
         ) {
             // window.location.assign(href);
-            window.location.href = href;
+            window.location.href = window.location.origin + href;
         }
     });
 }
