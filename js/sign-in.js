@@ -20,7 +20,7 @@ function signInInfo() {
 
                 window.location.assign(window.location.origin + "/index.html");
             } else {
-                alertText("Введите коректные данные", "signin.html");
+                alertText("Введите коректные данные", "/html/signin.html");
             }
         });
     }
