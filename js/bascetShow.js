@@ -191,5 +191,5 @@ buyBtn.addEventListener("click", () => {
 });
 
 backButton.addEventListener("click", () => {
-    window.location.href = window.location.origin;
+    window.location.href = window.location.origin + "/index.html";
 });

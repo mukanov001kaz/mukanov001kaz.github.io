@@ -26,3 +26,5 @@ accordion();
 slider();
 login();
 headerSlider();
+
+// console.log(window.location.origin + "/index.html");
