@@ -37,7 +37,7 @@ export function headerSlider() {
     setInterval(() => {
         headerPlusSlider(1);
         headerDotsShow();
-    }, 3500);
+    }, 3200);
 
     for (let i = 1; i <= headerSlideImage.length; i++) {
         const li = document.createElement("li");

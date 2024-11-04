@@ -74,6 +74,7 @@ const bascet = function () {
             const userLocalstorage = JSON.parse(localStorage.getItem("user"));
 
             userLocalstorage.forEach((item) => {
+                item.array = [];
                 item.login = false;
 
                 goOutArray.push(item);

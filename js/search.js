@@ -18,6 +18,8 @@ const search = function () {
 
         if (seacrhArray.length === 0) {
             product.innerHTML = "Товар не найден";
+        } else {
+            console.log(seacrhArray);
         }
     });
 };
