@@ -18,7 +18,7 @@ function signInInfo() {
 
                 localStorage.setItem("user", JSON.stringify(signInArray));
 
-                window.location.assign("./index.html");
+                window.location.assign(window.location.origin + "index.html");
             } else {
                 alertText("Введите коректные данные", "signin.html");
             }
