@@ -9,6 +9,7 @@
 html,
 body {
     font-family: "Lora", serif;
+    position: relative;
 }
 
 .container {
@@ -32,5 +33,11 @@ body {
 @import "./scss/signup";
 @import "./scss/keyframes";
 @import "./scss/alertText";
+@import "./scss/footer";
 
-// background: linear-gradient(360deg, rgb(59, 130, 246), rgb(217, 70, 239), rgb(17, 24, 39));
+.top {
+    text-decoration: none;
+    position: absolute;
+    bottom: 135px;
+    right: 35px;
+}

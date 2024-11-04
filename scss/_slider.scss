@@ -1,5 +1,14 @@
 .slider {
+    margin-bottom: 50px;
     position: relative;
+
+    h2 {
+        font-size: 50px;
+        text-align: center;
+        margin: 50px 0;
+        font-weight: 700;
+    }
+
     &__container {
         position: relative;
         margin: 60px auto 0 auto;

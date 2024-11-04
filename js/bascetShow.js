@@ -28,22 +28,6 @@ const renderBasket = function (bascet) {
             <span class="remove">x</span>
             `;
         bascetPage.prepend(div);
-
-        // bascetPage.innerHTML += `
-        //    <div class="bascet__item-block" data-id="${item.id}">
-        //         <img src="${item.img}" class="bascet__img" alt="" />
-        //         <div class="bascet__content">
-        //             <div class="bascet__title">${item.title}</div>
-        //             <div class="bascet__quantity">
-        //                 <button class="btn btn-primary minus">-</button>
-        //                 <span class="result">1</span>
-        //                 <button class="btn btn-primary plus">+</button>
-        //             </div>
-        //             <div class="bascet__price" data-price="${item.price}">${item.price}</div>
-        //         </div>
-        //         <span class="remove">x</span>
-        //     </div>
-        // `;
     });
 };
 
@@ -187,6 +171,17 @@ function saveProductsMinus(id) {
 }
 
 buyBtn.addEventListener("click", () => {
+    const localArray = [];
+    const localData = JSON.parse(localStorage.getItem("user"));
+
+    localData.forEach((item) => {
+        item.array = [];
+
+        localArray.push(item);
+
+        localStorage.setItem("user", JSON.stringify(localArray));
+    });
+
     alertText("Спасибо за покупку", "/index.html");
 });
 

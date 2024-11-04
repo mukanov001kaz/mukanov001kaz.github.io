@@ -34,10 +34,10 @@ export function headerSlider() {
         headerShowSlider((headerSliderIndex += index));
     }
 
-    // setInterval(() => {
-    //     headerPlusSlider(1);
-    //     headerDotsShow();
-    // }, 3500);
+    setInterval(() => {
+        headerPlusSlider(1);
+        headerDotsShow();
+    }, 3500);
 
     for (let i = 1; i <= headerSlideImage.length; i++) {
         const li = document.createElement("li");

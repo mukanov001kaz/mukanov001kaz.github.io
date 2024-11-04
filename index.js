@@ -27,4 +27,16 @@ slider();
 login();
 headerSlider();
 
-// console.log(window.location.origin + "/index.html");
+const anchors = document.querySelectorAll('a[href *= "#"]');
+
+anchors.forEach((item) => {
+    item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const id = item.getAttribute("href");
+
+        document.querySelector("" + id).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    });
+});
