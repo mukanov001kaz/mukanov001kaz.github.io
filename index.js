@@ -12,6 +12,7 @@ let firstIndex = 0,
     lastIndex = 6;
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM полностью готов");
     request("https://fakestoreapi.com/products");
 });
 
