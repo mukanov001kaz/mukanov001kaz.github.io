@@ -57,9 +57,13 @@ const bascet = function () {
         let bascetCount = document.querySelector(".bascet__item");
         const bascetCountLength = JSON.parse(localStorage.getItem("user")) || [];
 
-        bascetCountLength.forEach((item) => {
-            bascetCount.textContent = item.array.length;
-        });
+        if (bascetCountLength) {
+            bascetCountLength.forEach((item) => {
+                bascetCount.textContent = item.array.length;
+            });
+        } else {
+            console.log("Ошибка");
+        }
     }
     bascetCountShow();
 
