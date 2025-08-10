@@ -56,13 +56,16 @@ const bascet = function () {
     function bascetCountShow() {
         let bascetCount = document.querySelector(".bascet__item");
         const bascetCountLength = JSON.parse(localStorage.getItem("user")) || [];
+        console.log(bascetCountLength[0].array.length);
 
         if (bascetCountLength) {
-            bascetCountLength.forEach((item) => {
-                bascetCount.textContent = item.array.length;
-            });
+            // bascetCountLength[0].array.forEach((item) => {
+            //     console.log(item);
+            //     bascetCount.textContent = item.length;
+            // });
+            bascetCount.textContent = bascetCountLength[0].array.length;
         } else {
-            console.log("Ошибка");
+            bascetCount.textContent = 0;
         }
     }
     bascetCountShow();
