@@ -57,7 +57,7 @@ const bascet = function () {
         let bascetCount = document.querySelector(".bascet__item");
         const bascetCountLength = JSON.parse(localStorage.getItem("user")) || [];
 
-        if (bascetCountLength) {
+        if (bascetCountLength && bascetCountLength.length > 0) {
             bascetCount.textContent = bascetCountLength[0].array.length;
         } else {
             bascetCount.textContent = 0;
