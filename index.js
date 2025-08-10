@@ -11,7 +11,9 @@ import { headerSlider } from "./js/header.js";
 let firstIndex = 0,
     lastIndex = 6;
 
-request("https://fakestoreapi.com/products");
+document.addEventListener("DOMContentLoaded", () => {
+    request("https://fakestoreapi.com/products");
+});
 
 if (localStorage.getItem("data")) {
     const data = JSON.parse(localStorage.getItem("data"));
