@@ -58,10 +58,6 @@ const bascet = function () {
         const bascetCountLength = JSON.parse(localStorage.getItem("user")) || [];
 
         if (bascetCountLength) {
-            // bascetCountLength[0].array.forEach((item) => {
-            //     console.log(item);
-            //     bascetCount.textContent = item.length;
-            // });
             bascetCount.textContent = bascetCountLength[0].array.length;
         } else {
             bascetCount.textContent = 0;
