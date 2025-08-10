@@ -14,13 +14,13 @@ let firstIndex = 0,
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOM полностью готов");
     request("https://fakestoreapi.com/products");
+
+    if (localStorage.getItem("data")) {
+        const data = JSON.parse(localStorage.getItem("data"));
+
+        moreProducts(data, firstIndex, lastIndex);
+    }
 });
-
-if (localStorage.getItem("data")) {
-    const data = JSON.parse(localStorage.getItem("data"));
-
-    moreProducts(data, firstIndex, lastIndex);
-}
 
 search();
 sort();
